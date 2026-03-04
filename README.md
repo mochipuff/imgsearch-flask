@@ -16,17 +16,17 @@ SYSTEM REQUIREMENTS
 DEPENDENCIES
 -------------
 Core Packages:
-  - flask>=2.0.0          # Web framework
-  - flask-socketio>=5.0.0 # WebSocket support
-  - flask-limiter>=3.0.0  # Rate limiting
-  - beautifulsoup4>=4.9.0 # HTML parsing
-  - eventlet>=0.33.0      # Async server
+  - flask
+  - flask-socketio
+  - flask-limiter
+  - beautifulsoup4
+  - eventlet
 
 Optional Packages (for enhanced scraping):
-  - curl_cffi>=0.6.0      # TLS fingerprint impersonation
-  - cloudscraper>=1.2.0   # Cloudflare bypass
-  - requests>=2.28.0      # HTTP library
-  - urllib3>=1.26.0       # HTTP client
+  - curl_cffi
+  - cloudscraper
+  - requests
+  - urllib3
 
 INSTALLATION
 -------------
@@ -152,7 +152,7 @@ Log files are generated in the application directory:
 Log levels: INFO, WARNING, ERROR, DEBUG
 
 PERFORMANCE NOTES
---------------------------------------------------------------------------------
+------------------
 - Cache TTL: 300 seconds (5 minutes)
 - Maximum results per request: 20 images
 - Default timeout for HTTP requests: 15 seconds
@@ -160,7 +160,7 @@ PERFORMANCE NOTES
 - Maximum HTTP buffer size: 1MB
 
 VERSION HISTORY
---------------------------------------------------------------------------------
+----------------
 v1.0.0 (Current)
   - Enhanced error handling
   - Improved caching mechanism
@@ -168,13 +168,13 @@ v1.0.0 (Current)
   - Optimized WebSocket configuration
 
 LICENSE
---------------------------------------------------------------------------------
-This project is provided as-is for educational and development purposes.
+--------
+You can publish this project into your production server (maybe needs a improvement on security system).
 Users are responsible for complying with Bing's Terms of Service and 
 applicable laws regarding web scraping in their jurisdiction.
 
 SUPPORT & MAINTENANCE
---------------------------------------------------------------------------------
+----------------------
 For issues, updates, or contributions:
   - Review logs in scraper.log
   - Check Flask and Socket.IO documentation
